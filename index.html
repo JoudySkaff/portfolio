@@ -1,56 +1,427 @@
-<!DOCTYPE html>
-<html>
-     <head>
-    <meta charset="UTF-8">
-    <title>Joudy Skaff Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-     </head>
-     <body>
-    <header>
-        <div class="header-container">
-            <img src="profile.jpg" alt="Joudy Photo" class="profile-img">
-            <div class="header-text">
-                <h1>Joudy Skaff</h1>
-                <p>Front-End Web Designer</p>
-            </div>
-        </div>
-    </header>
-    <section id="main">
-        <div class="skills-section">
-            <h2>My Skills</h2>
-            <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>UI/UX Design</li>
-            </ul>
-        </div>
-        <div class="projects-section">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>3D Design</h3>
-                <p>Creative 3D product modeling and realistic rendering.</p>
-            </div>
-            <div class="project">
-                <h3>Web Design</h3>
-                <p>Responsive websites with modern UI and clean layout.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: joudy.sk@gmail.com</p>
-        <p>Phone: +963988501795</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Joudy Skaff</p>
-    </footer>
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>All indeed | منصة أعمال متكاملة</title>
+  <meta name="description" content="الصفحة الرئيسية لشركة All indeed بخدمات الأعمال والتقنية والإعلام والاستثمار.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="#hero" aria-label="All indeed">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <strong>All</strong>
+            <em>indeed</em>
+          </span>
+        </a>
 
+        <div class="nav-actions">
+          <button class="nav-theme-toggle" id="theme-toggle" type="button" aria-label="تبديل الوضع" title="تبديل الوضع">🌗</button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#hero" class="nav-link active">الرئيسية</a>
+          <a href="#about" class="nav-link">من نحن</a>
+          <div class="nav-dropdown">
+            <a href="#services" class="nav-link nav-dropdown-trigger">خدماتنا</a>
+            <div class="nav-dropdown-menu" aria-label="قائمة خدماتنا">
+              <a href="media-platform.html" class="nav-dropdown-link">المنصة الإعلامية والإعلانية</a>
+              <a href="business-solutions.html" class="nav-dropdown-link">حلول الأعمال</a>
+              <a href="construction-investment.html" class="nav-dropdown-link">المقاولات والاستثمارات</a>
+              <a href="public-relations.html" class="nav-dropdown-link">العلاقات العامة</a>
+              <a href="technology-services.html" class="nav-dropdown-link">خدمات التكنولوجيا</a>
+              <a href="legal-consulting.html" class="nav-dropdown-link">الاستشارات القانونية</a>
+            </div>
+          </div>
+          <a href="blogs.html" class="nav-link">بلوج</a>
+          <a href="#contact" class="nav-link nav-cta">التواصل</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">نبني الأعمال، نصنع الحضور</p>
+            <h2 class="hero-headline">منصة متكاملة للأعمال والإعلام والاستثمار</h2>
+            <p class="hero-subline">نقدّم حلولاً ذكية تشمل حلول الأعمال، خدمات التكنولوجيا، الاستشارات القانونية، العلاقات العامة، الإعلام، والمقاولات والاستثمار، لبناء حضور قوي يقود النمو.</p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">ابدأ مشروعك معنا</a>
+              <a href="#services" class="btn btn-secondary">استكشف الخدمات</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>+80</strong>
+                <span>مشروع منجز</span>
+              </div>
+              <div class="stat-card">
+                <strong>+5</strong>
+                <span>سنوات خبرة</span>
+              </div>
+              <div class="stat-card">
+                <strong>+2</strong>
+                <span>دول عمل</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-wrap reveal">
+            <figure class="hero-photo">
+              <img src="images/الرئيسية.jpg" alt="فريق عمل يجتمع حول طاولة مع مخططات وأجهزة" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section about-dark" id="about">
+        <div class="container about-hero reveal">
+          <div class="about-logo-text">
+            <p class="eyebrow">من نحن</p>
+            <h2 class="about-title">منصة متكاملة للأعمال والإعلام والإعلان، تجمع تحت مظلتها حلول الأعمال، خدمات التكنولوجيا، الاستشارات القانونية، العلاقات العامة، المقاولات والاستثمار</h2>
+            <p class="about-lede">نساعد الشركات والمؤسسات وروّاد الأعمال على النمو وبناء حضور قوي في السوق من خلال ربط الاستراتيجية بالتنفيذ والإعلام المؤثر، ضمن حلول متكاملة مصممة لتحقيق نتائج ملموسة ومستدامة.</p>
+            <p class="about-lede">نؤمن بأن النجاح لا يقوم على خدمات منفصلة، بل على منظومة متكاملة تدعم الأعمال من الفكرة حتى التوسع.</p>
+          </div>
+          <div class="about-badge about-logo">
+            <img class="about-logo-photo" src="images/من نحن -1.jpg" alt="فريق أعمال يخطط لاستراتيجيات تطوير الأعمال" loading="lazy">
+          </div>
+        </div>
+
+        <div class="container about-cards-grid reveal">
+          <div class="about-card">
+            <h3>نحن فريق من الخبراء والمتخصصين</h3>
+            <p>في الإعلام والإعلان، التسويق الرقمي، الاستشارات الإدارية، الحلول التقنية، والاستشارات القانونية. نعمل بروح الشراكة مع عملائنا لتحقيق أهدافهم التجارية والمؤسسية.</p>
+            <div class="about-pill">+100 عملاء يثقون بنا</div>
+          </div>
+          <div class="about-metrics">
+            <div class="about-metric">
+              <strong>+80</strong>
+              <span>مشروع</span>
+            </div>
+            <div class="about-metric">
+              <strong>+5</strong>
+              <span>سنوات خبرة</span>
+            </div>
+            <div class="about-metric">
+              <strong>+2</strong>
+              <span>دول نعمل فيها</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container about-list-section reveal">
+          <figure class="about-list-media">
+            <img src="images/من نحن بقسم أعمالنا.jpg" alt="فريق العمل" loading="lazy">
+          </figure>
+          <div class="about-list">
+            <div class="about-list-item">
+              <span class="about-list-number">150+</span>
+              <p>تنفيذ الحملات الإعلامية والإعلانية</p>
+            </div>
+            <div class="about-list-item">
+              <span class="about-list-number">80+</span>
+              <p>بناء وإدارة العلامات التجارية</p>
+            </div>
+            <div class="about-list-item">
+              <span class="about-list-number">30+</span>
+              <p>تنفيذ وإدارة مشاريع المقاولات ودعم الاستثمار</p>
+            </div>
+            <div class="about-list-item">
+              <span class="about-list-number">90+</span>
+              <p>تطوير المواقع والمنصات الرقمية</p>
+            </div>
+            <div class="about-list-item">
+              <span class="about-list-number">68+</span>
+              <p>تقديم الاستشارات الإدارية والقانونية</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">خدماتنا</p>
+            <h2>خدمات مبنية لتدعم نمو الشركة من عدة زوايا</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span class="service-index">01</span>
+              <h3>حلول تقنية</h3>
+              <p>مواقع تعريفية، منصات أعمال، تجارب رقمية حديثة، وصفحات هبوط عالية التأثير.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-index">02</span>
+              <h3>إعلام وإعلان</h3>
+              <p>صياغة حضور بصري ورسائل تسويقية تظهر قيمة الشركة بأسلوب أنيق ومقنع.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-index">03</span>
+              <h3>استشارات أعمال</h3>
+              <p>تنظيم العرض التجاري، تحسين الانطباع العام، وتوجيه أوضح لمسار النمو.</p>
+            </article>
+            <article class="service-card reveal">
+              <span class="service-index">04</span>
+              <h3>دعم الاستثمار</h3>
+              <p>تحضير واجهات وعروض تعكس جدية المشروع وتساعد في تقديمه بصورة أقوى.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog section" id="blog">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">بلوج</p>
+            <h2>مقالات وأفكار لدعم نمو أعمالك</h2>
+          </div>
+
+          <div class="blog-grid">
+            <article class="blog-card reveal">
+              <span>هوية العلامة</span>
+              <h3>كيف يرفع التصميم الفاخر قيمة شركتك في أعين العملاء؟</h3>
+              <p>عناصر بسيطة مثل التباين، الحركة، والفراغ الذكي تصنع فرقًا كبيرًا في الانطباع.</p>
+            </article>
+            <article class="blog-card reveal">
+              <span>التحول الرقمي</span>
+              <h3>لماذا تحتاج الشركات الحديثة صفحة رئيسية تقود القرار بسرعة؟</h3>
+              <p>الموقع القوي لا يكتفي بالمظهر، بل يرتب الرسالة ويحوّل الزيارة إلى اهتمام فعلي.</p>
+            </article>
+            <article class="blog-card reveal">
+              <span>نمو الأعمال</span>
+              <h3>متى يصبح المحتوى البصري جزءًا من الاستثمار وليس مجرد شكل؟</h3>
+              <p>حين يبدأ بعرض الثقة، توضيح القيمة، واختصار الطريق بين الشركة والعميل المناسب.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-page-grid reveal">
+          <figure class="contact-hero-visual">
+            <img src="images/contact-hero.jpg" alt="فريق يتواصل رقمياً عبر الأجهزة مع أيقونات البريد والمحادثة">
+          </figure>
+          <div class="contact-form-shell">
+            <div class="contact-form-intro">
+              <p class="eyebrow">تواصل معنا</p>
+              <h2>دع علامتك التجارية تنبض بالحياة</h2>
+              <p>نطلق الإمكانات الكاملة لعلامتك التجارية من خلال استراتيجيات مبتكرة، وإبداع جريء، وتنفيذ يليق بهوية مشروعك.</p>
+            </div>
+
+            <form class="contact-form-layout">
+              <label>
+                <span>الاسم</span>
+                <input type="text" name="name" placeholder="اكتب اسمك">
+              </label>
+              <label>
+                <span>الايميل</span>
+                <input type="email" name="email" placeholder="name@example.com">
+              </label>
+              <label class="contact-field-full">
+                <span>الموضوع</span>
+                <input type="text" name="subject" placeholder="كيف يمكننا مساعدتك؟">
+              </label>
+              <label class="contact-field-full">
+                <span>الرسالة</span>
+                <textarea name="message" rows="5" placeholder="اكتب تفاصيل مشروعك أو استفسارك"></textarea>
+              </label>
+              <div class="contact-field-full contact-submit-wrap">
+                <button type="submit" class="btn btn-primary">ارسال</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info-shell">
+            <div class="contact-info-block">
+              <p class="contact-info-label">الهاتف</p>
+              <a href="tel:+963987177700" class="contact-info-highlight">(+963) 9871-77700</a>
+            </div>
+
+            <div class="contact-info-block">
+              <p class="contact-info-label">العنوان</p>
+              <p class="contact-info-text">دمشق، المزة، مقابل ملعب السكن الجامعي</p>
+            </div>
+
+            <div class="contact-info-block">
+              <p class="contact-info-label">البريد الإلكتروني</p>
+              <a href="mailto:info.sy@allindeed.net" class="contact-mail-link">info.sy@allindeed.net</a>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.facebook.com/p/Allindeed-Syria-61584290067440/" class="contact-social-link">Facebook</a>
+              <a href="https://www.youtube.com/@Allindeed-Syria" class="contact-social-link">YouTube</a>
+              <a href="https://www.instagram.com/allindeed.syria" class="contact-social-link">Instagram</a>
+              <a href="https://www.tiktok.com/@allindeed.sy" class="contact-social-link">TikTok</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-map-section reveal">
+        <iframe
+          title="موقع All indeed"
+          src="https://www.google.com/maps?q=Damascus%20Al%20Mezzeh&z=13&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="container faq-layout reveal">
+          <figure class="faq-illustration">
+            <img src="images/بصفحة التواصل الاسئلة الشائعة.jpg" alt="فريق يتواصل رقمياً مع أيقونات البريد والمحادثة" loading="lazy">
+          </figure>
+
+          <div class="faq-content">
+            <p class="faq-kicker">FAQ</p>
+            <h2>الأسئلة الشائعة</h2>
+
+            <div class="faq-list">
+              <article class="faq-item is-open">
+                <button type="button" class="faq-question" aria-expanded="true">
+                  <span>ما هي الخدمات التي تقدمها؟</span>
+                  <strong class="faq-icon">−</strong>
+                </button>
+                <div class="faq-answer">
+                  <p>نقدم خدمات متكاملة تشمل الإعلام والإعلان، حلول الأعمال، خدمات التكنولوجيا، الاستشارات القانونية، العلاقات العامة، والمقاولات والاستثمار.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>هل يمكن اختيار خدمة واحدة فقط؟</span>
+                  <strong class="faq-icon">+</strong>
+                </button>
+                <div class="faq-answer">
+                  <p>نعم، يمكن الاستفادة من أي خدمة بشكل مستقل أو دمج عدة خدمات ضمن حل متكامل حسب احتياجك.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>هل تقدمون حلولاً مخصصة لكل مشروع؟</span>
+                  <strong class="faq-icon">+</strong>
+                </button>
+                <div class="faq-answer">
+                  <p>نعم، جميع خدماتنا تُصمم خصيصًا لتناسب أهداف ومتطلبات كل عميل ومجال العمل الخاص به.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false">
+                  <span>كيف يمكن البدء بالتعاون معكم؟</span>
+                  <strong class="faq-icon">+</strong>
+                </button>
+                <div class="faq-answer">
+                  <p>يمكنك التواصل معنا عبر نموذج الاتصال أو مباشرة، وسيقوم فريقنا بالتواصل معك في أقرب وقت.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="footer">
+        <div class="container footer-grid reveal is-visible">
+          <div class="footer-brand">
+            <span class="brand-mark footer-brand-mark" aria-hidden="true"></span>
+            <div>
+              <p class="footer-brand-name">All indeed</p>
+              <p class="footer-tagline">شريكك الاستراتيجي في الأعمال والإعلام والاستثمار</p>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <p class="footer-heading">مواقع التواصل</p>
+            <div class="footer-social-links">
+              <a href="https://www.facebook.com/p/Allindeed-Syria-61584290067440/" class="footer-social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M13.5 21v-7.2h2.4l.4-2.8h-2.8v-1.8c0-.8.3-1.3 1.4-1.3h1.4V5.2c-.6-.1-1.5-.2-2.4-.2-2.4 0-3.9 1.4-3.9 4v2.2H8v2.8h2.6V21h2.9Z"/>
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@Allindeed-Syria" class="footer-social-link" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M21.8 8s-.2-1.5-.8-2.1c-.5-.6-1-.8-2-.9-2.5-.2-7-.2-7-.2s-4.5 0-7 .2c-1 .1-1.5.3-2 .9C2.4 6.5 2.2 8 2.2 8S2 9.7 2 11.4v1.2C2 14.3 2.2 16 2.2 16s.2 1.5.8 2.1c.5.6 1 .8 2 .9 2.5.2 7 .2 7 .2s4.5 0 7-.2c1-.1 1.5-.3 2-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.4v-1.2c0-1.7-.2-3.4-.2-3.4ZM9.8 14.6V8.8L15 11.7l-5.2 2.9Z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/allindeed.syria" class="footer-social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M8.8 4h6.4C18.8 4 20 5.2 20 8.8v6.4c0 3.6-1.2 4.8-4.8 4.8H8.8C5.2 20 4 18.8 4 15.2V8.8C4 5.2 5.2 4 8.8 4Zm0 2C7 6 6 7 6 8.8v6.4C6 17 7 18 8.8 18h6.4c1.8 0 2.8-1 2.8-2.8V8.8C18 7 17 6 15.2 6H8.8Zm7.5.6a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6Zm-4.3 1.4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2c-1.1 0-2 .9-2 2a2 2 0 1 0 4 0c0-1.1-.9-2-2-2Z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/963987177700" class="footer-social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M12.04 3C7.6 3 4 6.45 4 10.66c0 1.82.62 3.5 1.68 4.85L4.3 21l5.73-1.81c.95.3 1.96.47 3.01.47 4.43 0 8.02-3.45 8.02-7.66C21.06 6.45 17.47 3 13.03 3h-.99ZM12 5c3.32 0 6.03 2.54 6.03 5.66 0 3.13-2.7 5.67-6.03 5.67-.93 0-1.8-.2-2.59-.55l-.53-.23-3.4 1.08 1.09-3.07-.35-.5A4.95 4.95 0 0 1 6 10.66C6 7.54 8.68 5 12 5Zm3.23 6.93c-.18-.1-1.05-.55-1.21-.62-.16-.06-.28-.1-.4.1-.12.18-.46.61-.56.73-.11.12-.21.14-.4.04-.2-.1-.84-.31-1.6-.98-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.31.09-.41.09-.09.2-.24.3-.36.1-.12.13-.21.2-.35.06-.14.03-.26-.01-.36-.04-.1-.4-.96-.55-1.31-.15-.36-.29-.3-.4-.3h-.34c-.12 0-.3.04-.45.21-.15.18-.58.57-.58 1.38s.6 1.6.69 1.72c.09.12 1.17 1.82 2.84 2.54.4.17.7.27.94.35.4.13.77.11 1.06.07.32-.05 1.05-.43 1.2-.85.15-.42.15-.78.1-.85-.04-.07-.16-.11-.34-.21Z"/>
+                </svg>
+              </a>
+              <a href="https://www.tiktok.com/@allindeed.sy" class="footer-social-link" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                  <path d="M14.9 4.6c.5 1.5 1.8 2.7 3.3 2.9v2.5a5.6 5.6 0 0 1-3.3-1.1v4.8a5 5 0 1 1-4.9-5.2c.2 0 .5 0 .7.1v2.5a2.5 2.5 0 1 0 1.8 2.4V3h2.4v1.6Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <p class="footer-heading">روابط سريعة</p>
+            <a href="#hero">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="blogs.html">بلوج</a>
+            <a href="#contact">التواصل</a>
+          </div>
+
+          <div class="footer-links">
+            <p class="footer-heading">خدماتنا</p>
+            <a href="media-platform.html">الإعلام والإعلان</a>
+            <a href="business-solutions.html">حلول الأعمال</a>
+            <a href="construction-investment.html">المقاولات والاستثمار</a>
+            <a href="public-relations.html">العلاقات العامة</a>
+            <a href="technology-services.html">خدمات التكنولوجيا</a>
+            <a href="legal-consulting.html">الاستشارات القانونية</a>
+          </div>
+
+          <div class="footer-location">
+            <p class="footer-heading">Syria</p>
+            <p class="footer-location-city">Damaskus</p>
+            <a href="mailto:info.sy@allindeed.net" class="footer-link">info.sy@allindeed.net</a>
+            <a href="tel:+963969977995" class="footer-link">(+963) 9699 77995</a>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom container">
+          <p>© Copyright 2024 <strong>Allindeed</strong> – All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
